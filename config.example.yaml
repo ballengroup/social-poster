@@ -1,0 +1,19 @@
+# Copy to config.yaml and fill in.
+
+data_dir: data      # history database + Amazon upload kits live here
+inbox_dir: inbox    # drop your ORIGINAL video files here (not TikTok downloads)
+                    # optional caption: same name with .txt, e.g. lamp.mp4 + lamp.txt
+
+amazon:
+  enabled: true
+  only_hashtag: ""              # e.g. amazonfinds -> only captions tagged #amazonfinds
+  require_product_link: false   # true -> skip videos with no Amazon link in the caption
+
+# Optional: also drop each video into your TikTok inbox as a draft via TikTok's
+# official Content Posting API (needs a TikTok developer app with video.upload).
+tiktok_publish:
+  enabled: false
+  access_token: ""              # or set TIKTOK_ACCESS_TOKEN
+
+watch:
+  interval_minutes: 5

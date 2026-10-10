@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+# local state: login sessions, downloaded videos, job history, your config
+data/
+config.yaml
