@@ -1,8 +1,7 @@
 name: TikTok to LTK kits
 
 on:
-  schedule:
-    - cron: "17 14 * * *" # daily, ~7am Pacific
+  # Daily schedule turned off: TikTok blocks GitHub's servers. Run by hand from the Actions tab.
   workflow_dispatch:
     inputs:
       first_run:
