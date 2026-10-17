@@ -1,0 +1,38 @@
+# Copy to config.yaml and fill in. Env vars override: TIKTOK_HANDLE, OUTPUT_DIR, GDRIVE_FOLDER_ID.
+
+tiktok_handle: "shestarter"     # without the @
+
+# Optional. If the profile lookup fails with "Unable to extract secondary user ID",
+# paste your secUid here (see README) and the tool will skip that lookup.
+tiktok_sec_uid: ""
+
+# How many of your most recent videos to look at each run.
+check_latest: 15
+
+# Where kit folders are written locally.
+output_dir: "kits"
+
+# Tracks which TikTok video IDs already have a kit. Commit this file if you run on GitHub Actions.
+state_file: "state.json"
+
+# Optional: Google Drive folder ID to upload each kit into (the long ID at the end of the folder URL).
+# Needs a service account JSON (GOOGLE_APPLICATION_CREDENTIALS) shared as Editor on that folder.
+gdrive_folder_id: ""
+
+# Hashtags to drop from captions because they only mean something on TikTok.
+drop_hashtags:
+  - fyp
+  - foryou
+  - foryoupage
+  - fypシ
+  - viral
+  - tiktok
+  - tiktokmademebuyit
+  - tiktokshop
+  - tiktokshopfinds
+  - xyzbca
+  - duet
+  - stitch
+
+# Hashtags to append to every LTK caption, e.g. [LTKhome, LTKfindsunder50].
+add_hashtags: []
