@@ -4,6 +4,7 @@ Usage:
     python -m social_poster              # process new videos
     python -m social_poster --dry-run    # just list what's new
     python -m social_poster --mark-all-done   # first run: skip your back catalog
+    python -m social_poster --mark-all-done --keep-newest 1   # ...but leave the newest one for a sample kit
 """
 
 import argparse
@@ -26,6 +27,13 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Record every recent video as done without building kits (use once to skip old videos).",
     )
+    parser.add_argument(
+        "--keep-newest",
+        type=int,
+        default=0,
+        metavar="N",
+        help="With --mark-all-done, leave the N newest videos unmarked so the next run builds kits for them.",
+    )
     args = parser.parse_args(argv)
 
     cfg = load_config(args.config)
@@ -39,6 +47,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Found {len(recent)} recent, {len(new)} new.")
 
     if args.mark_all_done:
+        if args.keep_newest:
+            new = new[: -args.keep_newest]
         for v in new:
             state.mark_done(v.id, v.description[:80], kit_dir="(skipped)")
         print(f"Marked {len(new)} as done. Future runs only pick up videos posted after this.")

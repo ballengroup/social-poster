@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 14 * * *" # daily, ~7am Pacific
   workflow_dispatch:
+    inputs:
+      first_run:
+        description: "First run: skip existing videos, but make one sample kit from the newest"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # to commit state.json back
@@ -34,6 +39,13 @@ jobs:
             printf '%s' "$GDRIVE_SA_JSON" > "$RUNNER_TEMP/sa.json"
             echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json" >> "$GITHUB_ENV"
           fi
+
+      - name: First run, skip back catalog
+        if: ${{ inputs.first_run }}
+        env:
+          TIKTOK_HANDLE: ${{ vars.TIKTOK_HANDLE }}
+          TIKTOK_SEC_UID: ${{ vars.TIKTOK_SEC_UID }}
+        run: python -m social_poster --mark-all-done --keep-newest 1
 
       - name: Build kits for new TikToks
         env:

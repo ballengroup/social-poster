@@ -64,6 +64,13 @@ def test_first_run_with_mark_all_done_skips_back_catalog(project):
     assert not Path("kits").exists()
 
 
+def test_mark_all_done_can_keep_the_newest_for_a_sample_kit(project):
+    assert cli.main(["--mark-all-done", "--keep-newest", "1"]) == 0
+    assert set(json.loads(Path("state.json").read_text())["done"]) == {"1"}
+    assert cli.main([]) == 0
+    assert [k.name for k in Path("kits").iterdir()] == ["2026-10-02_new-mug-anthropologie_2"]
+
+
 def test_builds_kits_only_for_new_videos(project):
     Path("state.json").write_text(json.dumps({"done": {"1": {}}}))
     assert cli.main([]) == 0

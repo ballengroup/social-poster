@@ -22,7 +22,6 @@ open the LTK app.
 
 ```bash
 pip install -r requirements.txt
-cp config.example.yaml config.yaml      # set tiktok_handle
 python -m social_poster --mark-all-done # first time only: skip your existing videos
 python -m social_poster --dry-run       # see what's new
 python -m social_poster                 # build kits
@@ -37,11 +36,13 @@ sync to your phone without the Drive API setup below.
 ### Run it daily on GitHub (optional)
 
 `.github/workflows/tiktok-to-ltk.yml` runs every morning and on demand (Actions → *TikTok to LTK
-kits* → *Run workflow*). In the repo settings:
+kits* → *Run workflow*). The very first time, tick **First run** so it skips your existing
+videos and makes one sample kit from your newest. Your handle lives in `config.yaml`; everything
+below is optional:
 
 | Setting | Where | Value |
 | --- | --- | --- |
-| `TIKTOK_HANDLE` | Variables | your handle, no `@` |
+| `TIKTOK_HANDLE` | Variables | optional, overrides `tiktok_handle` in `config.yaml` |
 | `TIKTOK_SEC_UID` | Variables | optional, see troubleshooting |
 | `GDRIVE_FOLDER_ID` | Secrets | ID at the end of the Drive folder URL |
 | `GDRIVE_SERVICE_ACCOUNT_JSON` | Secrets | the service account key file's contents |

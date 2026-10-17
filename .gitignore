@@ -2,6 +2,5 @@ __pycache__/
 *.pyc
 .venv/
 .pytest_cache/
-config.yaml
 kits/
 service-account.json
