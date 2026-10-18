@@ -39,3 +39,7 @@ glossy and fake. Make one image at a time and refine with Lori.
 > nothing too perfect or symmetrical. Natural bright exposure, natural colors, soft shadows,
 > slight phone-camera grain, no CGI, no 3D render look, no wide-angle distortion. Wide
 > horizontal frame. No window behind the subject, no text, no people.
+
+## Standing rules from Lori
+- Always fix typos you come across on her posts (titles, excerpts, alt text, pin copy). No need to ask.
+- Always improve: every round should be better than the last, and each lesson gets written down here.
