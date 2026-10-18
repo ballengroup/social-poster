@@ -49,6 +49,10 @@ glossy and fake. Make one image at a time and refine with Lori.
 - Plain, boring rooms (mint bedroom round 1: simple bed, plain mirror, one plant). Bedrooms need
   personality: layered bedding, a statement headboard or mirror, lots of flowers, color and pattern.
 
+## AI labels
+- Pinterest is labeling the AI pins as AI (Oct 2026). That is accurate and stays. Never strip
+  metadata or disguise AI images. Product posts (gadgets) look fake in AI; real photos win there.
+
 ## Approved examples
 - Craft room 100 (round 5): spacious, every wall storage, bright, chair pushed back from the table.
 - Boho 100: candid sunlit living room, cream linen sofa, macrame, plants.
