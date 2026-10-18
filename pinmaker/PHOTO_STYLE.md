@@ -30,6 +30,9 @@ glossy and fake. Make one image at a time and refine with Lori.
 - Mess on the floor, even when added for "realism".
 - Posters or wall art in working rooms like a craft room.
 - Ornate vintage furniture and grandma styling when the post isn't about that look.
+- Product dumps: a counter lined with lots of gadgets "in use" (kitchen gadgets round 1) reads
+  awful, fake and not magazine-like. Product posts need ONE design idea (e.g. an appliance garage)
+  with only a few objects, calm and uncluttered.
 - Staged, impractical styling (candlesticks on a dresser, fancy fake furniture). Surfaces hold what
   a real person uses: jewelry dish, hairbrush, perfume, a plant, one vase of flowers.
 - Chair-centered compositions (the armchairs come out weird). A plain chair tucked at a table is fine.
