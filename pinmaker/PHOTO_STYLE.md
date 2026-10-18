@@ -9,6 +9,9 @@ Ideogram connector, `edit_images` with operation `edit_nano_banana_pro`
 glossy and fake. Make one image at a time and refine with Lori.
 
 ## What she likes
+- BIG IDEAS: every featured photo needs a magazine-worthy design idea, a wow factor that makes
+  you stop scrolling (e.g. a color-drenched room, a painted arched alcove, a statement bed).
+  The idea is magazine-level, but the photo still looks like a real snapshot, not a glossy render.
 - A real snapshot: eye level, taken from a doorway or standing, slightly off-center.
 - Bright and airy: daylight flooding in from windows just out of frame, no dark corners.
 - Full and colorful but tidy, every item a recognizable real thing.
