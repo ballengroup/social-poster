@@ -5,6 +5,22 @@
   "photos": [
     {
       "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/10/cqchp36CXK-MNx7EhIIU5g@2k.webp",
+      "size": [
+        1024,
+        571
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/10/cqchp36CXK-MNx7EhIIU5g%402k.webp",
+      "size": [
+        1024,
+        571
+      ]
+    },
+    {
+      "file": "03.jpg",
       "source": "https://ballenblogger.com/wp-content/uploads/2026/01/Cat-Furniture-Ideas.jpeg",
       "size": [
         1312,
