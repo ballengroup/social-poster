@@ -16,12 +16,17 @@ glossy and fake. Make one image at a time and refine with Lori.
 - Believable proportions: normal ceiling height, a bit roomy, nothing too symmetrical.
 - Clean floors.
 
+- Millennial homes (her readers): modern-organic, light oak, rattan and cane, boucle, linen,
+  arched mirrors, mushroom lamps, plants, Target/West Elm-style furniture, and real-life details
+  like a TV on the dresser, a phone on the charger, a laundry basket.
+
 ## What she rejects
 - Glossy "editorial / magazine" renders, CGI look, wide-angle distortion.
 - Pegboards and other small-tool clutter (AI garbles them).
 - A window behind the subject.
 - Mess on the floor, even when added for "realism".
 - Posters or wall art in working rooms like a craft room.
+- Ornate vintage furniture and grandma styling when the post isn't about that look.
 - Staged, impractical styling (candlesticks on a dresser, fancy fake furniture). Surfaces hold what
   a real person uses: jewelry dish, hairbrush, perfume, a plant, one vase of flowers.
 - Chair-centered compositions (the armchairs come out weird). A plain chair tucked at a table is fine.
