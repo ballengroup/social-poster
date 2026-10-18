@@ -2,5 +2,22 @@
   "url": "https://ballenblogger.com/how-to-build-a-diy-bloom-bar-for-your-next-event/",
   "title": "How to Build a DIY Bloom Bar for Your Next Event",
   "description": "Party & Event DIY Build a Bloom Bar That Looks Like You Hired a Florist A self-serve flower station that doubles as decor, entertainment, and the party favor, for a fraction of what a florist w…",
-  "photos": []
+  "photos": [
+    {
+      "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/DIY-Bloombar.webp",
+      "size": [
+        1312,
+        736
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://assets.wfcdn.com/im/02579673/compr-r85/4092/409247551/Faitaliicy%2BFlower%2BDisplay%2BStand%2Bwith%2BWheels%2C%2B3-Tier%2BRolling%2BFlower%2BCart%2Bwith%2B12%2BBuckets%2Bfor%2BFlorist%2C%2BWedding%2C%2BGarden%2BDecor%2C%2BHeavy%2BDuty%2BMoving%2BDisplay%2BCart.jpg",
+      "size": [
+        800,
+        800
+      ]
+    }
+  ]
 }

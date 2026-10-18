@@ -2,5 +2,38 @@
   "url": "https://ballenblogger.com/how-to-style-an-accordion-peg-rack/",
   "title": "How to Style an Accordion Peg Rack (Beyond Just Mugs!)",
   "description": "If you’ve spent any time on Pinterest lately, you’ve likely seen the accordion peg rack making a major comeback. There is a reason this vintage-inspired staple is popping up in every designer’s kit…",
-  "photos": []
+  "photos": [
+    {
+      "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/03/peg-rack.webp",
+      "size": [
+        1312,
+        736
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/03/style-rack.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "03.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/03/botanical-peg-board.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "04.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/03/slow-living-entryway.webp",
+      "size": [
+        736,
+        1312
+      ]
+    }
+  ]
 }

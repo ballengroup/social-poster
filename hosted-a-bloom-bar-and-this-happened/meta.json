@@ -2,5 +2,62 @@
   "url": "https://ballenblogger.com/hosted-a-bloom-bar-and-this-happened/",
   "title": "I Hosted A Bloom Bar And This Happened",
   "description": "You’ve seen them all over your Pinterest boards and Instagram feeds—these absolutely gorgeous, elaborate bloom bars. They promise this whimsical, interactive experience for your guests. But l…",
-  "photos": []
+  "photos": [
+    {
+      "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/how-to-host-a-bloom-bar.webp",
+      "size": [
+        1312,
+        736
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/bloom-bar-journey.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "03.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/thriller.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "04.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/prep-work.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "05.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/bloom-bar-welcome.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "06.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/icebreaker.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "07.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/02/bloom-bar-experience.webp",
+      "size": [
+        736,
+        1312
+      ]
+    }
+  ]
 }

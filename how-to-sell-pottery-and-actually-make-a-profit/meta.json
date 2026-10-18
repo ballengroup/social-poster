@@ -2,5 +2,46 @@
   "url": "https://ballenblogger.com/how-to-sell-pottery-and-actually-make-a-profit/",
   "title": "How To Sell Pottery And Actually Make A Profit",
   "description": "Ever wonder if your passion for clay could actually pay the bills? Many talented potters have shelves overflowing with beautiful work but aren’t sure how to bridge the gap between hobbyist an…",
-  "photos": []
+  "photos": [
+    {
+      "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/01/pottery-business.webp",
+      "size": [
+        1312,
+        736
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/01/the-foundations.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "03.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/01/pottery.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "04.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/01/market.webp",
+      "size": [
+        736,
+        1312
+      ]
+    },
+    {
+      "file": "05.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/01/artists-vision.webp",
+      "size": [
+        736,
+        1312
+      ]
+    }
+  ]
 }

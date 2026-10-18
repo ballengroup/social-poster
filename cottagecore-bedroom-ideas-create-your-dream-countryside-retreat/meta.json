@@ -2,5 +2,14 @@
   "url": "https://ballenblogger.com/cottagecore-bedroom-ideas-create-your-dream-countryside-retreat/",
   "title": "Cottagecore Bedroom Ideas: Create Your Dream Countryside Retreat",
   "description": "Transform your bedroom into a dreamy cottagecore retreat with vintage furniture, floral textiles, fairy lights, and botanical details. Discover how to create the perfect countryside sanctuary.",
-  "photos": []
+  "photos": [
+    {
+      "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/04/boho-minimalism-bedroom-featured.jpg",
+      "size": [
+        1200,
+        1200
+      ]
+    }
+  ]
 }
