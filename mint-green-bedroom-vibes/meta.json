@@ -5,6 +5,22 @@
   "photos": [
     {
       "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/10/VnZqpagQXd62WOQIZhEBNA@2k.webp",
+      "size": [
+        1024,
+        571
+      ]
+    },
+    {
+      "file": "02.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/10/VnZqpagQXd62WOQIZhEBNA%402k.webp",
+      "size": [
+        1024,
+        571
+      ]
+    },
+    {
+      "file": "03.jpg",
       "source": "https://ballenblogger.com/wp-content/uploads/2026/01/Mint-green-bedroom-vibes.jpeg",
       "size": [
         1312,
