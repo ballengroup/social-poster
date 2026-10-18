@@ -44,7 +44,14 @@ glossy and fake. Make one image at a time and refine with Lori.
 - Always fix typos you come across on her posts (titles, excerpts, alt text, pin copy). No need to ask.
 - Always improve: every round should be better than the last, and each lesson gets written down here.
 
-## Ideogram pins (whole pin made in Ideogram)
-- Photo gets about 78% of the pin, full width edge to edge. The text band is slim (about 22%)
-  and compact: one-line headline, small italic subline, tiny ballenblogger.com.
-- A tall text panel cuts off too much of the picture. Lori rejected the earlier 62/38 split.
+## Ideogram pins (whole pin made in Ideogram) — APPROVED STYLE
+- The photo fills the whole pin edge to edge. Never a flat text block across the bottom
+  (Lori: "too boring"; a tall panel also "cuts off too much of the picture").
+- Text sits on a pretty soft cream rounded label floating over the bottom fifth of the photo,
+  with a delicate blush double-line border and a tiny blush heart; the photo shows around it.
+- Mixed fonts: the first words in an elegant flowing blush script ("The 7 Best"), the key
+  words in bold espresso serif capitals with wide letter spacing ("DOG BEDS"), a tiny italic
+  subline, and tiny sans-serif "ballenblogger.com". Chic boutique-brand feel.
+- No tags or labels on objects (AI writes gibberish on them). Check spelling with
+  describe_image and eyeball the Tailwind draft with get_post_image.
+- Approved example: dog beds, Ideogram response DPqUuZnbUrWLwM7QqFv9-A (ideogram_3, realistic, 2x3).
