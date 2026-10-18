@@ -12,6 +12,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from html.parser import HTMLParser
 from io import BytesIO
 from pathlib import Path
@@ -93,6 +94,7 @@ def main(argv=None) -> int:
 
     failures = 0
     for url in args.urls:
+        time.sleep(2)  # be gentle; the site starts refusing rapid-fire page loads
         try:
             if not fetch_post(url, Path(args.out)):
                 failures += 1
@@ -102,8 +104,26 @@ def main(argv=None) -> int:
     return 1 if failures == len(args.urls) else 0
 
 
+def featured_image(post_url: str) -> str | None:
+    """Ask the WordPress.com API for the post's featured image (works when the page itself is blocked)."""
+    parsed = urlparse(post_url)
+    slug = parsed.path.strip("/").split("/")[-1]
+    api = f"https://public-api.wordpress.com/wp/v2/sites/{parsed.hostname}/posts?slug={slug}&_embed=wp:featuredmedia"
+    try:
+        posts = json.loads(fetch(api))
+        media = posts[0]["_embedded"]["wp:featuredmedia"][0]
+        return media.get("source_url")
+    except Exception as e:
+        print(f"{post_url}: featured image lookup failed: {e}", file=sys.stderr)
+        return None
+
+
 def fetch_post(post_url: str, out_root: Path) -> int:
-    html = fetch(post_url).decode("utf-8", "replace")
+    try:
+        html = fetch(post_url).decode("utf-8", "replace")
+    except Exception as e:
+        print(f"{post_url}: page fetch failed: {e}", file=sys.stderr)
+        html = ""
     page = PageParser()
     page.feed(html)
 
@@ -115,6 +135,10 @@ def fetch_post(post_url: str, out_root: Path) -> int:
     if page.meta.get("og:image"):
         candidates.append(page.meta["og:image"])
     candidates += page.images
+    if not candidates or all(is_amazon(urljoin(post_url, c)) for c in candidates):
+        img = featured_image(post_url)
+        if img:
+            candidates.append(img)
 
     seen, saved = set(), []
     for src in candidates:
@@ -128,7 +152,8 @@ def fetch_post(post_url: str, out_root: Path) -> int:
             try:
                 im = Image.open(BytesIO(fetch(url)))
                 im.load()
-            except Exception:
+            except Exception as e:
+                print(f"  skip {url}: {e}", file=sys.stderr)
                 continue
             seen.add(key)
             if min(im.size) < MIN_SIDE:
