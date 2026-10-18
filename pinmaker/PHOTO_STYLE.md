@@ -23,6 +23,10 @@ glossy and fake. Make one image at a time and refine with Lori.
   arched mirrors, mushroom lamps, plants, Target/West Elm-style furniture, and real-life details
   like a TV on the dresser, a phone on the charger, a laundry basket.
 
+- Kitchens: a REAL millennial kitchen, the prettiest version of a normal suburban one (shaker
+  cabinets, quartz, zellige or subway tile, stainless appliances, pendants over an island) with the
+  gadgets they really use out on the counter. Not a luxury designer kitchen with custom built-ins.
+
 ## What she rejects
 - Glossy "editorial / magazine" renders, CGI look, wide-angle distortion.
 - Pegboards and other small-tool clutter (AI garbles them).
