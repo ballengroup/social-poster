@@ -142,14 +142,15 @@ def fetch_post(post_url: str, out_root: Path) -> int:
     out = out_root / slug
     out.mkdir(parents=True, exist_ok=True)
 
+    # The API's featured image goes first: it reflects a new featured image right away,
+    # while the page (and its og:image) can be served from cache for a while.
     candidates = []
+    img = featured_image(post_url)
+    if img:
+        candidates.append(img)
     if page.meta.get("og:image"):
         candidates.append(page.meta["og:image"])
     candidates += page.images
-    if not candidates or all(is_amazon(urljoin(post_url, c)) for c in candidates):
-        img = featured_image(post_url)
-        if img:
-            candidates.append(img)
 
     seen, saved = set(), []
     for src in candidates:
