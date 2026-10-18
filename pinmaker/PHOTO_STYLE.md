@@ -43,3 +43,8 @@ glossy and fake. Make one image at a time and refine with Lori.
 ## Standing rules from Lori
 - Always fix typos you come across on her posts (titles, excerpts, alt text, pin copy). No need to ask.
 - Always improve: every round should be better than the last, and each lesson gets written down here.
+
+## Ideogram pins (whole pin made in Ideogram)
+- Photo gets about 78% of the pin, full width edge to edge. The text band is slim (about 22%)
+  and compact: one-line headline, small italic subline, tiny ballenblogger.com.
+- A tall text panel cuts off too much of the picture. Lori rejected the earlier 62/38 split.
