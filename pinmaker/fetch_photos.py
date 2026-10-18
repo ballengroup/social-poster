@@ -1,6 +1,8 @@
-"""Download the photos from a blog post so pins can be designed from them.
+"""Download the photos from blog posts so pins can be designed from them.
 
-Usage: python -m pinmaker.fetch_photos <post-url> [--out photos]
+Usage: python -m pinmaker.fetch_photos <post-url> [<post-url> ...] [--out photos]
+
+Amazon-hosted product images are skipped: Amazon's Associates rules don't allow reusing them on pins.
 
 Writes <out>/<slug>/NN.jpg (largest available size of each in-post image, in page order)
 plus meta.json with the post title, description and image sources.
@@ -21,6 +23,7 @@ from PIL import Image
 UA = {"User-Agent": "Mozilla/5.0 (pinmaker; +https://github.com/ballengroup/social-poster)"}
 MIN_SIDE = 500  # skip icons, logos, ad pixels
 MAX_PHOTOS = 12
+AMAZON_HOSTS = ("media-amazon.com", "ssl-images-amazon.com", "images-amazon.com")
 SIZE_SUFFIX = re.compile(r"-\d+x\d+(?=\.(?:jpe?g|png|webp)$)", re.I)
 
 
@@ -77,18 +80,35 @@ def original_url(src: str) -> str:
     return parsed._replace(path=path, query="").geturl()
 
 
+def is_amazon(url: str) -> bool:
+    host = urlparse(url).hostname or ""
+    return any(host.endswith(h) for h in AMAZON_HOSTS)
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("url")
+    ap.add_argument("urls", nargs="+")
     ap.add_argument("--out", default="photos")
     args = ap.parse_args(argv)
 
-    html = fetch(args.url).decode("utf-8", "replace")
+    failures = 0
+    for url in args.urls:
+        try:
+            if not fetch_post(url, Path(args.out)):
+                failures += 1
+        except Exception as e:  # one bad post shouldn't stop the batch
+            print(f"{url}: FAILED {e}", file=sys.stderr)
+            failures += 1
+    return 1 if failures == len(args.urls) else 0
+
+
+def fetch_post(post_url: str, out_root: Path) -> int:
+    html = fetch(post_url).decode("utf-8", "replace")
     page = PageParser()
     page.feed(html)
 
-    slug = urlparse(args.url).path.strip("/").split("/")[-1] or "post"
-    out = Path(args.out) / slug
+    slug = urlparse(post_url).path.strip("/").split("/")[-1] or "post"
+    out = out_root / slug
     out.mkdir(parents=True, exist_ok=True)
 
     candidates = []
@@ -98,7 +118,9 @@ def main(argv=None) -> int:
 
     seen, saved = set(), []
     for src in candidates:
-        src = urljoin(args.url, src)
+        src = urljoin(post_url, src)
+        if is_amazon(src):
+            continue
         for url in dict.fromkeys([original_url(src), src]):  # full size first, then as-served
             key = SIZE_SUFFIX.sub("", urlparse(url).path)
             if key in seen:
@@ -119,14 +141,14 @@ def main(argv=None) -> int:
             break
 
     meta = {
-        "url": args.url,
+        "url": post_url,
         "title": page.meta.get("og:title") or page.title.strip(),
         "description": page.meta.get("og:description") or page.meta.get("description", ""),
         "photos": saved,
     }
     (out / "meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
-    print(f"Saved {len(saved)} photos to {out}")
-    return 0 if saved else 1
+    print(f"{post_url}: saved {len(saved)} photos to {out}")
+    return len(saved)
 
 
 if __name__ == "__main__":
