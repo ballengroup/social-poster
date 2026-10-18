@@ -9,6 +9,9 @@ Ideogram connector, `edit_images` with operation `edit_nano_banana_pro`
 glossy and fake. Make one image at a time and refine with Lori.
 
 ## What she likes
+- DESIRE FIRST: before writing a prompt, ask "what would her reader WANT to have?" and show
+  that dream (the kitchen she saves for her future house: huge island, plaster hood, walk-in
+  pantry, coffee bar). Pretty-but-ordinary reads as ugly.
 - BIG IDEAS: every featured photo needs a magazine-worthy design idea, a wow factor that makes
   you stop scrolling (e.g. a color-drenched room, a painted arched alcove, a statement bed).
   The idea is magazine-level, but the photo still looks like a real snapshot, not a glossy render.
