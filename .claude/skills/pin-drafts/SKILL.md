@@ -27,6 +27,8 @@ pin, and add each new lesson to it right away ("learn as you go").
    - Pick a photo with a small, clearly saturated object.
    - Set `pop` when the automatic choice is wrong.
    - Pastel walls use `pop: "mint"` (low-saturation mode).
+   - When the pop color also shows up in wood or skin, add `pop_box: [x0, y0, x1, y1]`
+     (fractions of the photo) to keep the color to one subject.
 5. **Ideogram pin.** `generate_images` `ideogram_3`, 2x3, realistic, magic off, quality, private.
    - Use the approved floating-label wording in PHOTO_STYLE.md word for word.
    - Check the spelling with `describe_image`.
