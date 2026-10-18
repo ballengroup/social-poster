@@ -55,3 +55,10 @@ glossy and fake. Make one image at a time and refine with Lori.
 - No tags or labels on objects (AI writes gibberish on them). Check spelling with
   describe_image and eyeball the Tailwind draft with get_post_image.
 - Approved example: dog beds, Ideogram response DPqUuZnbUrWLwM7QqFv9-A (ideogram_3, realistic, 2x3).
+- Keep the approved wording word for word ("Over the bottom fifth of the photo floats a pretty
+  ... label ... so the picture shows around it on all sides"). Asking for a "small, compact label
+  in only the bottom 20 percent" made Ideogram draw a flat full-width band instead.
+- Flat lays and product scenes: say "all objects plain and unbranded, absolutely no writing on
+  any object", or Ideogram prints gibberish brand names on boxes and cups.
+- Featured images that are text graphics (title baked in) can't be used for the regular or
+  B&W pins; those posts need a new featured photo first.
