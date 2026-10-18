@@ -12,6 +12,8 @@ glossy and fake. Make one image at a time and refine with Lori.
 - DESIRE FIRST: before writing a prompt, ask "what would her reader WANT to have?" and show
   that dream (the kitchen she saves for her future house: huge island, plaster hood, walk-in
   pantry, coffee bar). Pretty-but-ordinary reads as ugly.
+- The post's subject must be the clear star of the photo (a gadgets post needs the gadgets front
+  and center: coveted, matching, in use), set inside that dream space.
 - BIG IDEAS: every featured photo needs a magazine-worthy design idea, a wow factor that makes
   you stop scrolling (e.g. a color-drenched room, a painted arched alcove, a statement bed).
   The idea is magazine-level, but the photo still looks like a real snapshot, not a glossy render.
