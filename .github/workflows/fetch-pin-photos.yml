@@ -1,0 +1,47 @@
+name: Fetch pin photos
+
+# Downloads a blog post's photos and commits them to the pin-photos branch,
+# so pins can be designed from them where the blog itself isn't reachable.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Blog post URL"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-pin-photos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install Pillow
+
+      - name: Download photos
+        env:
+          POST_URL: ${{ inputs.url }}
+        run: python -m pinmaker.fetch_photos "$POST_URL" --out "$RUNNER_TEMP/photos"
+
+      - name: Commit to pin-photos branch
+        run: |
+          git config user.name "pin photos bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin pin-photos >/dev/null; then
+            git fetch origin pin-photos && git checkout pin-photos
+          else
+            git checkout --orphan pin-photos && git rm -rqf .
+          fi
+          cp -r "$RUNNER_TEMP/photos/." .
+          git add -A
+          git diff --cached --quiet || { git commit -qm "Photos for $(ls -t | head -1)" && git push origin pin-photos; }
