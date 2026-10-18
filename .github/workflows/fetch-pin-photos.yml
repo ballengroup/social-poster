@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        description: "Blog post URL"
+        description: "Blog post URL(s), separated by spaces"
         required: true
 
 permissions:
@@ -31,7 +31,8 @@ jobs:
       - name: Download photos
         env:
           POST_URL: ${{ inputs.url }}
-        run: python -m pinmaker.fetch_photos "$POST_URL" --out "$RUNNER_TEMP/photos"
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python -m pinmaker.fetch_photos $POST_URL --out "$RUNNER_TEMP/photos"
 
       - name: Commit to pin-photos branch
         run: |
@@ -44,4 +45,4 @@ jobs:
           fi
           cp -r "$RUNNER_TEMP/photos/." .
           git add -A
-          git diff --cached --quiet || { git commit -qm "Photos for $(ls -t | head -1)" && git push origin pin-photos; }
+          git diff --cached --quiet || { git commit -qm "Pin photos" && git push origin pin-photos; }
