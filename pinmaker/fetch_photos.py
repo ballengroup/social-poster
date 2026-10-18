@@ -81,6 +81,17 @@ def original_url(src: str) -> str:
     return parsed._replace(path=path, query="").geturl()
 
 
+PHOTON_HOST = re.compile(r"^i\d\.wp\.com$")
+
+
+def direct_url(src: str) -> str:
+    """i0.wp.com/<site>/wp-content/... -> https://<site>/wp-content/... (Photon 404s on .webp files)."""
+    parsed = urlparse(src)
+    if PHOTON_HOST.match(parsed.hostname or ""):
+        return "https://" + parsed.path.lstrip("/")
+    return src
+
+
 def is_amazon(url: str) -> bool:
     host = urlparse(url).hostname or ""
     return any(host.endswith(h) for h in AMAZON_HOSTS)
@@ -145,7 +156,8 @@ def fetch_post(post_url: str, out_root: Path) -> int:
         src = urljoin(post_url, src)
         if is_amazon(src):
             continue
-        for url in dict.fromkeys([original_url(src), src]):  # full size first, then as-served
+        # full size from the site itself first, then the CDN copies
+        for url in dict.fromkeys([direct_url(original_url(src)), original_url(src), src]):
             key = SIZE_SUFFIX.sub("", urlparse(url).path)
             if key in seen:
                 break
