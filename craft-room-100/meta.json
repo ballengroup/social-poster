@@ -5,6 +5,14 @@
   "photos": [
     {
       "file": "01.jpg",
+      "source": "https://ballenblogger.com/wp-content/uploads/2026/10/craft-room-must-haves.webp",
+      "size": [
+        1024,
+        571
+      ]
+    },
+    {
+      "file": "02.jpg",
       "source": "https://ballenblogger.com/wp-content/uploads/2026/01/craft-room.jpeg",
       "size": [
         1312,
@@ -12,7 +20,7 @@
       ]
     },
     {
-      "file": "02.jpg",
+      "file": "03.jpg",
       "source": "https://ballenblogger.com/wp-content/uploads/2026/01/Craft-Room.jpg",
       "size": [
         1024,
