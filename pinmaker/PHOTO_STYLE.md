@@ -24,6 +24,8 @@ glossy and fake. Make one image at a time and refine with Lori.
 - Posters or wall art in working rooms like a craft room.
 - Chair-centered compositions (the armchairs come out weird). A plain chair tucked at a table is fine.
 - Empty, sparse rooms.
+- Plain, boring rooms (mint bedroom round 1: simple bed, plain mirror, one plant). Bedrooms need
+  personality: layered bedding, a statement headboard or mirror, lots of flowers, color and pattern.
 
 ## Approved examples
 - Craft room 100 (round 5): spacious, every wall storage, bright, chair pushed back from the table.
@@ -62,3 +64,6 @@ glossy and fake. Make one image at a time and refine with Lori.
   any object", or Ideogram prints gibberish brand names on boxes and cups.
 - Featured images that are text graphics (title baked in) can't be used for the regular or
   B&W pins; those posts need a new featured photo first.
+
+## Talking with Lori
+- One thing at a time. Show one image or ask one question, then wait. No long status lists.
