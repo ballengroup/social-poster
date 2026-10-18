@@ -22,6 +22,8 @@ glossy and fake. Make one image at a time and refine with Lori.
 - A window behind the subject.
 - Mess on the floor, even when added for "realism".
 - Posters or wall art in working rooms like a craft room.
+- Staged, impractical styling (candlesticks on a dresser, fancy fake furniture). Surfaces hold what
+  a real person uses: jewelry dish, hairbrush, perfume, a plant, one vase of flowers.
 - Chair-centered compositions (the armchairs come out weird). A plain chair tucked at a table is fine.
 - Empty, sparse rooms.
 - Plain, boring rooms (mint bedroom round 1: simple bed, plain mirror, one plant). Bedrooms need
