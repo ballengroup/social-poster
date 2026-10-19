@@ -106,3 +106,10 @@ glossy and fake. Make one image at a time and refine with Lori.
   tones are skipped); headline in a deep shade of that same color.
 - B&W pop pins: the pop has to POP. Boost the popped color, use a wider hue range, and pick photos
   where the colored subject is big. If a pop comes out tiny or muddy, use a different photo.
+
+## Lessons (Oct 19, later)
+- B&W pop = ONE item only (Lori: "the pop of color needs to be one item, not all over the picture").
+  The renderer keeps only the biggest patch of color; use pop_box around the item when needed.
+  Soft colors have their own modes: "blush" (pale pink), "sage" (sage green clay), "mint" (pastel walls).
+- Ideogram misspells some words: BEDROOM came out "BEBROOM", THRIFT came out "THRIFS". Reword around them
+  ("HOME DECOR", "THRIFT STORE MUST-BUYS").

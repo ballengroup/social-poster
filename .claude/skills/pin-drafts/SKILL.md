@@ -25,7 +25,8 @@ pin, and add each new lesson to it right away ("learn as you go").
 3. **Regular pin.** Cream design A or B from the scratch renderer, using her photo. Colors are
    matched to the photo (`photo_palette`), never plain blush.
 4. **B&W pop pin.** Design D, a black-and-white photo with one color left in.
-   - Pick a photo with a big, clearly saturated subject so the pop really pops.
+   - The pop is ONE item, never color all over the photo. Pick a photo with one big, clearly
+     colored item (a pillow, a jacket, a bag) so the pop really pops.
    - Set `pop` when the automatic choice is wrong.
    - Pastel walls use `pop: "mint"` (low-saturation mode).
    - When the pop color also shows up in wood or skin, add `pop_box: [x0, y0, x1, y1]`
@@ -45,3 +46,7 @@ pin, and add each new lesson to it right away ("learn as you go").
 - Never use Amazon-hosted images (Amazon Associates TOS).
 - Never mark pins as AI, and never strip metadata or screenshot to hide AI provenance.
 - Drafts only. Never schedule without Lori's approval.
+- Never change a draft's board with update_post: Tailwind queued a draft when its board changed.
+  If a draft is wrong, make a fresh draft instead.
+- make.py writes every design to out/<slug>.jpg, so a B&W render overwrites the regular one.
+  Render the regular pins last, right before uploading them.
