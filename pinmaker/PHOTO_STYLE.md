@@ -94,8 +94,14 @@ glossy and fake. Make one image at a time and refine with Lori.
 ## Talking with Lori
 - One thing at a time. Show one image or ask one question, then wait. No long status lists.
 
-## Ideogram pins: color-matched label (TEST, Oct 19)
+## Color-matched pins (APPROVED by Lori, Oct 19): the default for ALL pins now
 - Lori's idea: keep the floating rounded label, but take the label border, heart and script color
   from the photo's own palette (e.g. deep red and evergreen for Christmas, rust for fall) instead of
   always blush, while staying soft and feminine. Caps stay a deep neutral that reads well.
 - Testing on the next 12 seasonal posts (Christmas and gifts). Compare against the blush ones.
+- Lori: "do the color match when you create pins, I like it". No more plain blush pins.
+- ballenblogger.com is always in the same color as the accent/script text (Ideogram and rendered pins).
+- Rendered pins: heart, subline, borders and domain take the photo's prettiest color (wood and skin
+  tones are skipped); headline in a deep shade of that same color.
+- B&W pop pins: the pop has to POP. Boost the popped color, use a wider hue range, and pick photos
+  where the colored subject is big. If a pop comes out tiny or muddy, use a different photo.

@@ -22,15 +22,17 @@ pin, and add each new lesson to it right away ("learn as you go").
    - Iterate with Lori until she approves.
    - Then set it in WordPress: `media.create` with `source_url`, then `posts.update` `featured_media`.
    - Re-run the fetch workflow.
-3. **Regular pin.** Cream design A or B from the scratch renderer, using her photo.
+3. **Regular pin.** Cream design A or B from the scratch renderer, using her photo. Colors are
+   matched to the photo (`photo_palette`), never plain blush.
 4. **B&W pop pin.** Design D, a black-and-white photo with one color left in.
-   - Pick a photo with a small, clearly saturated object.
+   - Pick a photo with a big, clearly saturated subject so the pop really pops.
    - Set `pop` when the automatic choice is wrong.
    - Pastel walls use `pop: "mint"` (low-saturation mode).
    - When the pop color also shows up in wood or skin, add `pop_box: [x0, y0, x1, y1]`
      (fractions of the photo) to keep the color to one subject.
 5. **Ideogram pin.** `generate_images` `ideogram_3`, 2x3, realistic, magic off, quality, private.
-   - Use the approved floating-label wording in PHOTO_STYLE.md word for word.
+   - Use the approved floating-label wording in PHOTO_STYLE.md word for word, with the label
+     border, heart, script AND ballenblogger.com in colors taken from the photo.
    - Check the spelling with `describe_image`.
    - Create the draft with `mediaUrl`.
    - Eyeball it with `get_post_image`.
