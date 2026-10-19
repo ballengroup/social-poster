@@ -50,3 +50,6 @@ pin, and add each new lesson to it right away ("learn as you go").
   If a draft is wrong, make a fresh draft instead.
 - make.py writes every design to out/<slug>.jpg, so a B&W render overwrites the regular one.
   Render the regular pins last, right before uploading them.
+- Ideogram pins: ask for plain unlabeled objects (labeled jars, tins and soap come out as gibberish), then
+  eyeball each finished draft with get_post_image, not just describe_image.
+- Images on b2359769.assetcdn.net/.../wp-content/uploads are Lori's own CDN copies and are fine to use.

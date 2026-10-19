@@ -113,5 +113,9 @@ glossy and fake. Make one image at a time and refine with Lori.
   Soft colors have their own modes: "blush" (pale pink), "sage" (sage green clay), "mint" (pastel walls).
 - Ideogram misspells some words: BEDROOM came out "BEBROOM", THRIFT came out "THRIFS". Reword around them
   ("HOME DECOR", "THRIFT STORE MUST-BUYS"). Also WHOLE came out "WOOLE" and "Thrifted" became "thrifty".
+- Ideogram writes gibberish on labeled jars, tins, stamped soap and paint bottles. Ask for "plain unlabeled
+  objects" and put "labels on jars, stamped soap, tins, product labels" in the negative prompt.
+- Ideogram sometimes draws a hyphen as a squiggle ("5~MINUTE"). Look at every Ideogram pin in Tailwind
+  (get_post_image) before reporting it done; describe_image misses these.
 - Weak or muddy pops: switch to a photo with one clearly colored item, or box the item. pop_sat raises the
   saturation floor so kraft paper and wood stay gray.
