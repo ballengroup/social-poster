@@ -112,4 +112,6 @@ glossy and fake. Make one image at a time and refine with Lori.
   The renderer keeps only the biggest patch of color; use pop_box around the item when needed.
   Soft colors have their own modes: "blush" (pale pink), "sage" (sage green clay), "mint" (pastel walls).
 - Ideogram misspells some words: BEDROOM came out "BEBROOM", THRIFT came out "THRIFS". Reword around them
-  ("HOME DECOR", "THRIFT STORE MUST-BUYS").
+  ("HOME DECOR", "THRIFT STORE MUST-BUYS"). Also WHOLE came out "WOOLE" and "Thrifted" became "thrifty".
+- Weak or muddy pops: switch to a photo with one clearly colored item, or box the item. pop_sat raises the
+  saturation floor so kraft paper and wood stay gray.
