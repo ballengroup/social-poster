@@ -93,3 +93,9 @@ glossy and fake. Make one image at a time and refine with Lori.
 
 ## Talking with Lori
 - One thing at a time. Show one image or ask one question, then wait. No long status lists.
+
+## Ideogram pins: color-matched label (TEST, Oct 19)
+- Lori's idea: keep the floating rounded label, but take the label border, heart and script color
+  from the photo's own palette (e.g. deep red and evergreen for Christmas, rust for fall) instead of
+  always blush, while staying soft and feminine. Caps stay a deep neutral that reads well.
+- Testing on the next 12 seasonal posts (Christmas and gifts). Compare against the blush ones.
