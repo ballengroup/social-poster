@@ -100,7 +100,8 @@ glossy and fake. Make one image at a time and refine with Lori.
   always blush, while staying soft and feminine. Caps stay a deep neutral that reads well.
 - Testing on the next 12 seasonal posts (Christmas and gifts). Compare against the blush ones.
 - Lori: "do the color match when you create pins, I like it". No more plain blush pins.
-- ballenblogger.com is always in the same color as the accent/script text (Ideogram and rendered pins).
+- Rendered pins: ballenblogger.com in the accent text color.
+- Ideogram pins: NO domain at all (Lori, Oct 19). Ideogram kept misspelling it; the pin link does the job.
 - Rendered pins: heart, subline, borders and domain take the photo's prettiest color (wood and skin
   tones are skipped); headline in a deep shade of that same color.
 - B&W pop pins: the pop has to POP. Boost the popped color, use a wider hue range, and pick photos

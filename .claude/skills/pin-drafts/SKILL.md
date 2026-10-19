@@ -32,7 +32,8 @@ pin, and add each new lesson to it right away ("learn as you go").
      (fractions of the photo) to keep the color to one subject.
 5. **Ideogram pin.** `generate_images` `ideogram_3`, 2x3, realistic, magic off, quality, private.
    - Use the approved floating-label wording in PHOTO_STYLE.md word for word, with the label
-     border, heart, script AND ballenblogger.com in colors taken from the photo.
+     border, heart and script in colors taken from the photo. Leave ballenblogger.com OFF
+     Ideogram pins (it gets misspelled).
    - Check the spelling with `describe_image`.
    - Create the draft with `mediaUrl`.
    - Eyeball it with `get_post_image`.
